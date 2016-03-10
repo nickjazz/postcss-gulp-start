@@ -1,0 +1,49 @@
+@import 'normalize.css';
+
+.container {
+	max-width: 1220px;
+	width: 100%;
+	margin: 1rem auto;
+}
+
+.row {
+	display: flex;
+}
+
+.col {
+	margin: 0 2px;
+	width: 100%;
+}
+
+.grid {
+	min-height: 1em ;
+	background: color(red a(20%)) ;
+	border-radius: 2px ;
+	margin-bottom: 4px ;
+	padding: 1rem ;
+	font-size: 12px ;
+}
+
+
+@for $i from 1 to 12 {
+	.row-parent {
+		.col-xs-$i:container(width > 544px) {
+			width: resolve(resolve(100 / 12) * $i)% 
+		}
+
+		.col-sm-$i:container(width > 768px) {
+			width: resolve(resolve(100 / 12) * $i)% 
+		}
+
+		.col-md-$i:container(width > 992px) {
+			width: resolve(resolve(100 / 12) * $i)% 
+		}
+
+		.col-lg-$i:container(width > 1200px) {
+			width: resolve(resolve(100 / 12) * $i)% 
+		}
+	}
+}
+
+
+

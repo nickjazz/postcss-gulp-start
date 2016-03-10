@@ -1,0 +1,36 @@
+doctype
+html(lang="en-us")
+  head
+    // Web config
+    = '\n'
+
+    - var title = "PostCSS 玩一下 - INDER"
+
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title #{title}
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+    
+    = '\n'
+    // Theme
+    link(rel="stylesheet", href="assets/stylesheets/skin.css")
+
+    = '\n'
+    block css
+    
+    script(src="assets/scripts/cq-prolyfill.js")
+  body
+    block main
+
+    
+
+    = '\n'
+    // Below js just for this page only
+    block js
+
+
+
+
+
+
